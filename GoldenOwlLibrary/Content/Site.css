@@ -1,12 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('Images/booksBackground.png');
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-image: url('Images/paper-wallpaper.png');
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +23,49 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#logoImg
+{
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#logoText
+{
+    font-size: 70px;
+    color: darkgoldenrod;
+    float: left;
+    margin-top: 30px; 
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: right;
+}
+
+#Nav 
+{
+    width: 103%;
+    float: left;
+    margin-left: -1.5%;
+    background-image: url('Images/wood.png');
+    background-repeat: repeat;
+}
+
+.navBook 
+{
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.navBook2 
+{
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: right;
 }
