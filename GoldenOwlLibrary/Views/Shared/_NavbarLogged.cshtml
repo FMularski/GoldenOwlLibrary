@@ -1,8 +1,18 @@
-﻿<div id="Nav">
+﻿@using Microsoft.AspNet.Identity
+
+<div id="Nav">
     <a href='@Url.Action("Index", "Home")'><img class="navBook" src='@Url.Content("~/Content/Images/Book-Home.png")' /></a>
     <a href='@Url.Action("Index", "Books")'><img class="navBook" src='@Url.Content("~/Content/Images/Book-Books.png")' /></a>
     <a href='@Url.Action("About", "Home")'><img class="navBook" src='@Url.Content("~/Content/Images/Book-About.png")' /></a>
     <a href='@Url.Action("Contact", "Home")'><img class="navBook" src='@Url.Content("~/Content/Images/Book-Contact.png")' /></a>
-    <a href='@Url.Action("Register", "Account")'><img class="navBook2" src='@Url.Content("~/Content/Images/Book-Register.png")' /></a>
-    <a href='@Url.Action("Login", "Account")'><img class="navBook2" src='@Url.Content("~/Content/Images/Book-LogIn.png")' /></a>
+
+    <div id="helloUser">Hello @User.Identity.GetUserName()</div>
+    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navBook2" }))
+    {
+        @Html.AntiForgeryToken()
+        <a href="javascript:document.getElementById('logoutForm').submit()"><img class="navBook" src='@Url.Content("~/Content/Images/Book-Log_Out.png")' /></a>
+    }
 </div>
+
+
+

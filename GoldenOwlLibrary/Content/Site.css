@@ -69,3 +69,11 @@ textarea {
     height: 80px;
     float: right;
 }
+
+#helloUser {
+    color: gold;
+    margin-left: 25%;
+    font-size: large;
+    float: left;
+    margin-top: 25px;
+}

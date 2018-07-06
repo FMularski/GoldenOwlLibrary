@@ -216,6 +216,7 @@
     <Content Include="Content\Images\Book-Contact.png" />
     <Content Include="Content\Images\Book-Home.png" />
     <Content Include="Content\Images\Book-LogIn.png" />
+    <Content Include="Content\Images\Book-Log_Out.png" />
     <Content Include="Content\Images\Book-Register.png" />
     <Content Include="Content\Images\booksBackground.png" />
     <Content Include="Content\Images\Book-About.png" />
@@ -276,7 +277,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Shared\_NavbarLogged.cshtml" />
+    <Content Include="Views\Home\IndexLogged.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
